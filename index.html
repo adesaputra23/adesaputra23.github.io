@@ -32,10 +32,10 @@
   </head>
   <body class="bg-[#F5EFFF]">
     <div
-      class="container bg-[#CDC1FF] mx-auto mt-5 p-4 w-2/3 rounded-xl shadow-md z-50 relative"
+      class="lg:relative md:relative fixed top-0 lg:container bg-[#CDC1FF] mx-auto lg:mt-5 p-4  w-full lg:w-2/3 rounded-xl shadow-md z-50"
     >
       <div
-        class="mx-auto border-2 border-[#F5EFFF] rounded-full mt-12 w-32 h-32 shadow-md"
+        class="mx-auto border-2 border-[#F5EFFF] rounded-full lg:mt-12 md:mt-12 mt-4 w-[20%] h-[4.5rem] lg:w-32 lg:h-32 md:w-32 md:h-32 shadow-md"
       >
         <img
           class="mx-auto rounded-full w-full h-full object-cover"
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="container bg-[#E5D9F2] mx-auto p-4 w-2/3 shadow-md m-[-10px] z-1 relative">
+    <div class="hidden sm:block lg:block lg:container bg-[#E5D9F2] mx-auto p-4 lg:w-2/3 shadow-md m-[-10px] z-1 relative">
       <div class="mt-2 mb-2">
         <div class="flex justify-between">
           <p>
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div class="container bg-[#FFFFFF] mx-auto p-4 w-2/3 shadow-md mb-5">
+    <div class="hidden sm:block lg:block lg:container bg-[#FFFFFF] mx-auto p-4 lg:w-2/3 shadow-md mb-5">
 
       <!-- profil -->
       <div class="mx-8 my-8">
@@ -145,9 +145,9 @@
                   <span class="mb-1 mt-1 font-bold block">Asisten Staff LP3L</span>
                   <span class="mb-1 mt-1 block">Juli 2020 - Desember 2020</span>
                   <ul class="list-disc pl-4">
-                    <li>Membantu mengelola dokumen pendaftaran Mahasiswa yang melaksanakan PLP.</li>
-                    <li>Membuat sertifikat hasil pelaksanaan PLP untuk Mahasiswa, Dosen Pembimbing dan Pembimbing Lapangan.</li>
-                    <li>Membantu membuat rekapan nilai Mahasiswa yang melaksanakan PLP.</li>
+                    <li class="text-justify">Membantu mengelola dokumen pendaftaran Mahasiswa yang melaksanakan PLP.</li>
+                    <li class="text-justify">Membuat sertifikat hasil pelaksanaan PLP untuk Mahasiswa, Dosen Pembimbing dan Pembimbing Lapangan.</li>
+                    <li class="text-justify">Membantu membuat rekapan nilai Mahasiswa yang melaksanakan PLP.</li>
                   </ul>
                 </li>
                 <li>
@@ -155,12 +155,12 @@
                     2. CV Mamorasoft
                   </p>
                   <span class="mb-1 mt-1 font-bold block">Web Developer</span>
-                  <span class="mb-1 mt-1 block">Juli 2021 - Oktober 2024</span>
+                  <span class="mb-1 mt-1 block">Juli 2021 - Januari 2025</span>
                   <ul class="list-disc pl-4">
-                    <li>Merancang dan membangun aplikasi berbasis Web dengan menggunakan HTML, CSS, JavaScript, PHP dan Framework seperti React Js, Angular Js, Laravel, Yii dan CodeIgniter.</li>
-                    <li>Mengelola database, termasuk merancang dan mengoptimalkan tabel.</li>
-                    <li>Membuat struktur dan tampilan website yang responsif (responsive design).</li>
-                    <li>Memelihara situs web, termasuk pembaruan rutin dan peningkatan fitur</li>
+                    <li class="text-justify">Merancang dan membangun aplikasi berbasis Web dengan menggunakan HTML, CSS, JavaScript, PHP dan Framework seperti React Js, Angular Js, Laravel, Yii dan CodeIgniter.</li>
+                    <li class="text-justify">Mengelola database, termasuk merancang dan mengoptimalkan tabel.</li>
+                    <li class="text-justify">Membuat struktur dan tampilan website yang responsif (responsive design).</li>
+                    <li class="text-justify">Memelihara situs web, termasuk pembaruan rutin dan peningkatan fitur</li>
                   </ul>
                 </li>
               </ul>
@@ -207,5 +207,143 @@
       </div>
 
     </div>
+
+    <!-- android menu bar -->
+    <div class="block lg:hidden sm:hidden fixed z-50 w-[20rem] h-[3rem] max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
+      <div class="grid h-full max-w-lg grid-cols-4 mx-auto">
+          
+        <button data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+              <i class="fa-solid fa-user text-[#9ca3af]"></i>
+              <span class="sr-only">Profil</span>
+          </button>
+        <div id="tooltip-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          Profil
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        
+        <button data-tooltip-target="tooltip-wallet" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <i class="fa-solid fa-user-graduate text-[#9ca3af]"></i>
+            <span class="sr-only">Pendidikan</span>
+        </button>
+        <div id="tooltip-wallet" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Pendidikan
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+
+        <button data-tooltip-target="tooltip-settings" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <i class="fa-solid fa-place-of-worship text-[#9ca3af]"></i>
+            <span class="sr-only">Pengalaman Kerja</span>
+        </button>
+        <div id="tooltip-settings" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Pengalaman Kerja
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+
+          <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+              <i class="fa-solid fa-user-check text-[#9ca3af]"></i>
+              <span class="sr-only">Keahlian</span>
+          </button>
+          <div id="tooltip-profile" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+              Keahlian
+              <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+      </div>
+    </div>
+    <!-- end android menu bar -->
+
+     <!-- profil -->
+     <div class="block lg:hidden sm:hidden mx-2 my-8 mt-[12rem] mb-[5rem]">
+      <div class="flex">
+        <div class="ms-6 mx-4">
+          <h1 class="font-bold text-xl mb-2">Profil</h1>
+          <p class="text-justify text-sm">
+            Web Developer dengan pengalaman bekerja lebih dari 3 tahun dalam membangun dan pengembangan aplikasi berbasis web, terbiasa menggunakan HTML, CSS, JavaScript, PHP dan Framework seperti React Js, Angular Js untuk kebutuhan Front End kemudian Laravel, Yii dan CodeIgniter untuk Back End. Terbiasa bekerja secara tim maupun individu untuk menciptakan solusi digital yang inovatif, efisien, dan responsif.
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 font-bold" />
+    </div>
+
+     <!-- pendidikan -->
+     <!-- <div class="block lg:hidden sm:hidden mx-2 my-8 mt-[12rem] mb-[5rem]">
+      <div class="flex">
+        <div class="ms-6 mx-4">
+          <h1 class="font-bold text-xl mb-2">Pendidikan</h1>
+          <p class="text-justify">
+            <ul>
+              <li class="text-bold">Sarjana Sistem Informasi</li>
+              <li>Universitas Kanjuruhan Malang, 2020</li>
+              <li>IPK: 3.57</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 font-bold" />
+    </div> -->
+
+    <!-- pengalaman kerja -->
+    <!-- <div class="block lg:hidden sm:hidden mx-2 my-8 mt-[12rem] mb-[5rem]">
+      <div class="flex">
+        <div class="ms-6 mx-4">
+          <h1 class="font-bold text-xl mb-2">Pengalaman Kerja</h1>
+          <p class="text-justify">
+            <ul>
+              <li class="mb-2">
+                <p class="font-bold text-sm">
+                  1. Universitas Kanjuruhan Malang (Unikama)
+                </p>
+                <span class="mb-1 mt-1 font-bold block text-sm">Asisten Staff LP3L</span>
+                <span class="mb-1 mt-1 block text-sm">Juli 2020 - Desember 2020</span>
+                <ul class="list-disc pl-4">
+                  <li class="text-justify text-sm">Membantu mengelola dokumen pendaftaran Mahasiswa yang melaksanakan PLP.</li>
+                  <li class="text-justify text-sm">Membuat sertifikat hasil pelaksanaan PLP untuk Mahasiswa, Dosen Pembimbing dan Pembimbing Lapangan.</li>
+                  <li class="text-justify text-sm">Membantu membuat rekapan nilai Mahasiswa yang melaksanakan PLP.</li>
+                </ul>
+              </li>
+              <li>
+                <p class="font-bold text-sm">
+                  2. CV Mamorasoft
+                </p>
+                <span class="mb-1 mt-1 font-bold block text-sm">Web Developer</span>
+                <span class="mb-1 mt-1 block text-sm">Juli 2021 - Januari 2025</span>
+                <ul class="list-disc pl-4">
+                  <li class="text-justify text-sm">Merancang dan membangun aplikasi berbasis Web dengan menggunakan HTML, CSS, JavaScript, PHP dan Framework seperti React Js, Angular Js, Laravel, Yii dan CodeIgniter.</li>
+                  <li class="text-justify text-sm">Mengelola database, termasuk merancang dan mengoptimalkan tabel.</li>
+                  <li class="text-justify text-sm">Membuat struktur dan tampilan website yang responsif (responsive design).</li>
+                  <li class="text-justify text-sm">Memelihara situs web, termasuk pembaruan rutin dan peningkatan fitur</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 font-bold" />
+    </div> -->
+
+    <!-- Keahian -->
+    <!-- <div class="block lg:hidden sm:hidden mx-2 my-8 mt-[12rem] mb-[5rem]">
+      <div class="flex">
+        <div class="ms-6 mx-4">
+          <h1 class="font-bold text-xl mb-2">Keahlian</h1>
+            <div class="flex justify-between">
+              <ol class="list-disc pl-4 mx-4">
+                <li class="text-sm">HTML</li>
+                <li class="text-sm">CSS</li>
+                <li class="text-sm">JavaScript</li>
+                <li class="text-sm">PHP</li>
+                <li class="text-sm">Laravel</li>
+                <li class="text-sm">CodeIgniter</li>
+                <li class="text-sm">Yii</li>
+                <li class="text-sm">React Js</li>
+                <li class="text-sm">Angular Js</li>
+                <li class="text-sm">Vue Js</li>
+                <li class="text-sm">PostgreSQL</li>
+              </ol>
+            </div>
+        </div>
+      </div>
+      <hr class="my-4 font-bold" />
+    </div> -->
+
   </body>
 </html>
