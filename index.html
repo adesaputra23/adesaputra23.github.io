@@ -210,7 +210,7 @@
 
     <!-- android menu bar -->
     <div class="block lg:hidden sm:hidden fixed z-50 w-[20rem] h-[3rem] max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
-      <div class="grid h-full max-w-lg grid-cols-4 mx-auto">
+      <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
           
         <button data-tooltip-target="tooltip-profil" id="profil" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
             <i class="fa-solid fa-user text-[#9ca3af]"></i>
@@ -227,9 +227,14 @@
             <span class="sr-only">Pengalaman Kerja</span>
         </button>
 
-        <button data-tooltip-target="tooltip-keahlian" type="button" id="keahlian" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <button data-tooltip-target="tooltip-keahlian" id="keahlian" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
             <i class="fa-solid fa-user-check text-[#9ca3af]"></i>
             <span class="sr-only">Keahlian</span>
+        </button>
+
+        <button data-tooltip-target="tooltip-sosial" type="button" id="sosial" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <i class="fa-solid fa-share-nodes text-[#9ca3af]"></i>
+            <span class="sr-only">Sosial</span>
         </button>
 
       </div>
@@ -330,6 +335,34 @@
       <hr class="my-4 font-bold" />
     </div>
 
+    <!-- Sosial Media -->
+    <div id="tooltip-sosial" class="hidden lg:hidden sm:hidden mx-2 my-8 mt-[12rem] mb-[5rem] toltip-menu">
+      <div class="flex">
+        <div class="ms-6 mx-4">
+          <h1 class="font-bold text-xl mb-2">Alamat & Sosial Media</h1>
+            <div>
+                <p class="text-sm">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span class="ml-2 font-bold">Alamat :</span> Dusun Karya Mulya, Plampang
+                </p>
+                <p class="text-sm">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span class="ml-2 font-bold">Email :</span> adeputrasaputra11@gmail.com
+                </p>
+                <p class="text-sm">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="ml-2 font-bold">No Telpon :</span> +62 812-5204-1157
+                </p>
+                <p class="text-sm">
+                  <i class="fa-brands fa-github"></i>
+                  <span class="ml-2 font-bold">Github :</span> adesaputra23
+                </p>
+            </div>
+        </div>
+      </div>
+      <hr class="my-4 font-bold" />
+    </div>
+
   <script>
     const buttons = document.querySelectorAll("button");
     buttons.forEach(element => {
@@ -345,7 +378,7 @@
             var toltipTarget = element.dataset.tooltipTarget;
             var tooltip = document.getElementById(toltipTarget);
             tooltip.classList.replace('hidden', 'block');
-            
+
         })
     });
   </script>
