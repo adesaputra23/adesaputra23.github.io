@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>index</title>
+    <title>Profil</title>
     <link
       href="assets/fontawesome-free-6.7.2-web/css/fontawesome.css"
       rel="stylesheet"
@@ -50,6 +50,16 @@
           ADE SAPUTRA
         </p>
         <p class="text-center mt-[-2px] text-[#F5EFFF] italic">Web Developer</p>
+      </div>
+      <div class="hidden lg:flex md:flex  items-center justify-center my-2 mt-4">
+          <a href="#" class="p-2 bg-gray-200 shadow-md rounded-lg text-sm mx-1 hover:bg-gray-100">
+            <i class="fa-solid fa-download"></i>
+            CV
+          </a>
+          <a href="portfolio.html" class="p-2 bg-gray-200 shadow-md rounded-lg text-sm mx-1 hover:bg-gray-100">
+            <i class="fa-regular fa-eye"></i>
+            Portfolio
+          </a>
       </div>
     </div>
 
@@ -212,27 +222,27 @@
     <div class="block lg:hidden sm:hidden fixed z-50 w-[20rem] h-[3rem] max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
       <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
           
-        <button data-tooltip-target="tooltip-profil" id="profil" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <button data-tooltip-target="tooltip-profil" id="profil" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group tooltip">
             <i class="fa-solid fa-user text-[#9ca3af]"></i>
             <span class="sr-only">Profil</span>
         </button>
         
-        <button data-tooltip-target="tooltip-pendidikan" id="pendidikan" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <button data-tooltip-target="tooltip-pendidikan" id="pendidikan" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group tooltip">
             <i class="fa-solid fa-user-graduate text-[#9ca3af]"></i>
             <span class="sr-only">Pendidikan</span>
         </button>
 
-        <button data-tooltip-target="tooltip-pengalaman-kerja" id="pengalaman-kerja" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <button data-tooltip-target="tooltip-pengalaman-kerja" id="pengalaman-kerja" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group tooltip">
             <i class="fa-solid fa-place-of-worship text-[#9ca3af]"></i>
             <span class="sr-only">Pengalaman Kerja</span>
         </button>
 
-        <button data-tooltip-target="tooltip-keahlian" id="keahlian" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <button data-tooltip-target="tooltip-keahlian" id="keahlian" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group tooltip">
             <i class="fa-solid fa-user-check text-[#9ca3af]"></i>
             <span class="sr-only">Keahlian</span>
         </button>
 
-        <button data-tooltip-target="tooltip-sosial" type="button" id="sosial" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <button data-tooltip-target="tooltip-sosial" type="button" id="sosial" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group tooltip">
             <i class="fa-solid fa-share-nodes text-[#9ca3af]"></i>
             <span class="sr-only">Sosial</span>
         </button>
@@ -252,6 +262,16 @@
         </div>
       </div>
       <hr class="my-4 font-bold" />
+      <div class="ms-6 block lg:hidden md:hidden  items-center justify-center my-2 mt-4">
+          <a href="#" class="p-2 bg-gray-200 shadow-md rounded-lg text-sm mx-1 hover:bg-gray-100">
+            <i class="fa-solid fa-download"></i>
+            CV
+          </a>
+          <a href="portfolio.html" class="p-2 bg-gray-200 shadow-md rounded-lg text-sm mx-1 hover:bg-gray-100">
+            <i class="fa-regular fa-eye"></i>
+            Portfolio
+          </a>
+      </div>
     </div>
 
      <!-- pendidikan -->
@@ -364,7 +384,7 @@
     </div>
 
   <script>
-    const buttons = document.querySelectorAll("button");
+    const buttons = document.querySelectorAll(".tooltip");
     buttons.forEach(element => {
       element.addEventListener("click", (e) => {
             e.preventDefault();
